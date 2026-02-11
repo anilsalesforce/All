@@ -1,0 +1,12 @@
+<!-- File: myRestCaller.html -->
+<template>
+    <lightning-card title="Salesforce REST API Call">
+        <template if:true={responseData}>
+            <p>Status: {responseData.status}</p>
+            <p>Message: {responseData.message}</p>
+        </template>
+        <template if:true={error}>
+            <p style="color:red;">Error: {error}</p>
+        </template>
+    </lightning-card>
+</template>
